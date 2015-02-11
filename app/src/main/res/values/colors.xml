@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="primaryColor">#8BC34A</color>
+        <color name="primaryColorDark">#689F38</color>
+        <color name="accentColor">#FF5722</color>
+        <color name="rippleBg">#BF360C</color>
+        <color name="primaryColorLight">#DCEDC8</color>
+        <color name="primaryText">#212121</color>
+        <color name="secondaryText">#727272</color>
+        <color name="dividerColor">#B6B6B6</color>
+        <color name="navigationDrawerBg">#FFF</color>
+    </resources>
