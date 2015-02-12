@@ -1,3 +1,3 @@
 # BestFriendsPetHotel
-<img source="http://yadi.sk/i/BxQnmWVMecqt6"></img><br>
-<img source="http://yadi.sk/i/cX4dBPaJecqtN"></img>
+<img source="http://mws3000/dog_pictures/promo1.jpg"><br>
+<img source="http://mws3000/dog_pictures/promo2.jpg">
