@@ -30,10 +30,9 @@ public class DogsInHotelActivity extends ActionBarActivity {
     // Movies json url
     private static final String url = "http://mws3000.com/dog_pictures/dogs.json";
     private ProgressDialog pDialog;
-    private List<Dogs> dogsList = new ArrayList<Dogs>();
+    private List<Dogs> dogsList = new ArrayList<>();
     private GridView gridView;
     private DogsAdapter adapter;
-    int i;
 
 
 
