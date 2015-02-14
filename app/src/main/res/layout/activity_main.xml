@@ -125,6 +125,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@null"
+            android:onClick="iconButtons"
             android:src="@drawable/email48" />
 
         <ImageButton
@@ -135,6 +136,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:background="@null"
+            android:onClick="iconButtons"
             android:src="@drawable/facebook48" />
 
 

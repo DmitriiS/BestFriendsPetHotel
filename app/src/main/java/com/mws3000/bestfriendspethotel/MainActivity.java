@@ -20,9 +20,6 @@ import com.android.volley.toolbox.JsonArrayRequest;
 
 import org.json.JSONArray;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class MainActivity extends ActionBarActivity {
 
@@ -36,7 +33,6 @@ public class MainActivity extends ActionBarActivity {
     // Movies json url
     private static final String url = "http://mws3000.com/dog_pictures/dogs.json";
     private ProgressDialog pDialog;
-    private List<Dogs> dogsList = new ArrayList<Dogs>();
 
     // Log tag
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -124,12 +120,12 @@ public class MainActivity extends ActionBarActivity {
 
     public void iconButtons(View view) {
 
-        Intent intentIcon = null;
-        Intent chooser = null;
+        Intent intentIcon;
+        Intent chooser;
 
         if (view.getId() == R.id.imageButtonDir) {
             intentIcon = new Intent(Intent.ACTION_VIEW);
-            intentIcon.setData(Uri.parse("geo: 18.448722, -69.964556"));
+            intentIcon.setData(Uri.parse("geo: 18.448722, -69.964556?q=18.448722, -69.964556"));
             chooser = Intent.createChooser(intentIcon, "Launch Maps");
             startActivity(chooser);
         }
