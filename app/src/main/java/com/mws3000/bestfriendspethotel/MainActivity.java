@@ -38,8 +38,6 @@ public class MainActivity extends ActionBarActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +62,6 @@ public class MainActivity extends ActionBarActivity {
         t2.setTypeface(myCustomFont);
 
 
-
-
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading ...");
@@ -81,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    private void makeJsonArrayRequest () {
+    private void makeJsonArrayRequest() {
 
         // Creating volley request obj
         JsonArrayRequest dogsReq = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
@@ -91,7 +87,7 @@ public class MainActivity extends ActionBarActivity {
                 Log.d(TAG, response.toString());
                 hidePDialog();
                 a.setText(String.valueOf(response.length()));
-                int avail = (MAXIMUM-response.length());
+                int avail = (MAXIMUM - response.length());
                 a2.setText(String.valueOf(avail));
             }
 
