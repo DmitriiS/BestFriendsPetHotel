@@ -3,16 +3,12 @@ package com.mws3000.bestfriendspethotel;
 
 public class Dogs {
 
-    private String name, picture, gender, breed;
+    private String name;
+    private String picture;
+    private String gender;
+    private String breed;
 
-    public Dogs(){
-    }
-
-    public Dogs(String name, String picture, String gender, String breed){
-        this.name = name;
-        this.picture = picture;
-        this.gender = gender;
-        this.breed = breed;
+    public Dogs() {
     }
 
 
@@ -47,7 +43,6 @@ public class Dogs {
     public void setBreed(String breed) {
         this.breed = breed;
     }
-
 
 
 }

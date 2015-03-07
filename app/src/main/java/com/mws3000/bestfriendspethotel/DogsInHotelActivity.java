@@ -27,13 +27,12 @@ public class DogsInHotelActivity extends ActionBarActivity {
     // Log tag
     private static final String TAG = DogsInHotelActivity.class.getSimpleName();
 
-    // Movies json url
+    // Dogs json url
     private static final String url = "http://mws3000.com/dog_pictures/dogs.json";
     private ProgressDialog pDialog;
     private List<Dogs> dogsList = new ArrayList<>();
     private GridView gridView;
     private DogsAdapter adapter;
-
 
 
     @Override
@@ -44,7 +43,6 @@ public class DogsInHotelActivity extends ActionBarActivity {
         gridView = (GridView) findViewById(R.id.gridView);
         adapter = new DogsAdapter(this, dogsList);
         gridView.setAdapter(adapter);
-
 
 
         pDialog = new ProgressDialog(this);
@@ -67,7 +65,7 @@ public class DogsInHotelActivity extends ActionBarActivity {
                 hidePDialog();
 
                 // Parsing json
-                for (int i = 0; i < response.length(); i++){
+                for (int i = 0; i < response.length(); i++) {
                     try {
                         JSONObject obj = response.getJSONObject(i);
                         Dogs dogs = new Dogs();
@@ -108,7 +106,7 @@ public class DogsInHotelActivity extends ActionBarActivity {
         hidePDialog();
     }
 
-    private void hidePDialog(){
+    private void hidePDialog() {
         if (pDialog != null) {
             pDialog.dismiss();
             pDialog = null;
