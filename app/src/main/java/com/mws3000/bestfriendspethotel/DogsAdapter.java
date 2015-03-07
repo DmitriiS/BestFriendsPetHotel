@@ -61,6 +61,7 @@ public class DogsAdapter extends BaseAdapter {
         TextView gender = (TextView) convertView.findViewById(R.id.dogGender);
         TextView breed = (TextView) convertView.findViewById(R.id.dogBreed);
 
+        //Test comment
 
         // getting dogs data for the row
         final Dogs d = dogsItems.get(position);
